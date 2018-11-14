@@ -1,0 +1,160 @@
+
+.accordion {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.pay-btn {
+    /* margin-top: 10px; */
+    background-color: #e32162;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 5px;
+    height: unset !important;
+}
+
+.pay-btn:focus {
+    /* margin-top: 10px; */
+    background-color: #e32162;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.pay-btn:hover {
+    /* border: 1px solid #e32162; */
+    background-color: #f48327;
+    color: #fff;
+}
+
+.rLink {
+    color: #000000 !important;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 5px;
+    position: absolute;
+}
+
+.rLink:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.rLink:focus {
+    text-decoration: #000000;
+}
+.form-inline .form-control {
+    display: inline-block;
+    /* width: auto; */
+    vertical-align: middle;
+    width: 135px;
+}
+
+.summ {
+    width: 50%;
+}
+
+.left-col {
+    margin-left: -40px;
+}
+
+.btn-margin {
+    margin-left: -30px;
+}
+
+.showall {
+    display: none;
+}
+
+.showConfirm {
+    display: none;
+}
+
+.nowPay {
+    display: none;
+    margin-left: -10em;
+    margin-top: -8px;
+}
+
+.paydet {
+    display: none;
+}
+
+.confirmBtn {
+    margin-left: 5px;
+}
+
+.closeAll {
+    display: none;
+}
+
+.rEnjoy {
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 650px) {
+    .summ {
+        width: 100%;
+    }
+    .cart-btn {
+        float: none !important;
+    }
+    .left-col {
+        margin-left: 0;
+    }
+    .btn-margin {
+        margin-left: 0;
+    }
+    .form-inline .form-control {
+        display: inline-block;
+        /* width: auto; */
+        vertical-align: middle;
+        width: 50%;
+    }
+    .confirmBtn {
+        margin-left: 0;
+    }
+
+    .nowPay {
+    display: none;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+    .rLink {
+    color: #000000 !important;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 5px;
+    position: absolute;
+    margin-left: -1.4em;
+}
+.accordion {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+}

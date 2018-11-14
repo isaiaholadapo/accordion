@@ -4,55 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Accordion</title>
 </head>
 <body>
-    <style>
-        .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
+    <button class="accordion">Click here to enjoy Rewards</button>
+    <div class="panel">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                        <ul class="list-inline">
+                            <li>
+                                <button class="btn pay-btn">Buy Airtime</button>
+                            </li>
+                            <li>
+                                <button class="btn pay-btn">Buy Data</button>
+                            </li>
+            
+                        </ul>
+                </div>
+                
+                <div class="col-xs-3 col-md-1 closeAll">
+                                <!-- <a class="rLink" href="#">&times; Close</a> -->
+                </div>
+            </div>
+            <div class="showall">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label class="sr-only" for="network">Network</label>
+                                <select class="form-control " id="airtimeSelect" value="">
+                                    <option value="">Select network</option>
+                                    <option name="" id="">9mobile</option>
+                                    <option name="" id="">Airtel</option>
+                                    <option name="" id="">Glo</option>
+                                    <option name="" id="">MTN</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="airtimeAmount">Amount</label>
+                                <input type="number" class="form-control " id="airtimeAmount" placeholder="Amount" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="airtimeNumber">Phone Number</label>
+                                <input type="number" class="form-control " id="airtimeNumber" placeholder="Phone number" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="airtimeEmail">Email</label>
+                                <input type="email" class="form-control " id="airtimeEmail" placeholder="Email" disabled>
+                            </div>
 
-.active, .accordion:hover {
-    background-color: #ccc;
-}
+                        </form>
+                    </div>
+                    <div class="col-md-1">
+                        <button class="btn pay-btn confirmBtn">Pay</button>
+                    </div>
+                </div>
 
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-    </style>
-    <button class="accordion">Section 1</button>
-<div class="panel">
-  <p>Lorem ipsum...</p>
-</div>
-
-<script>
-   var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="showConfirm">
+                        <ul class="list-inline">
+                            <li><strong>Network:</strong> MTN </li>
+                            <li><strong>Amount:</strong> <del>N</del>5,000</li>
+                            <li><strong>Phone Number:</strong> 09012345678</li>
+                            <li><strong>Email:</strong> abec@abc.com</li>
+                            <li><strong>Transaction ID:</strong> 12345564</li>
+                        </ul>
+        
+                    </div>
+                </div>
+            
+            <div class="col-md-1">
+                <button class="btn pay-btn nowPay">Pay </button>
+            </div>
+        </div>
+            <p class="paydet">
+                payment gateway shows here
+            </p>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
